@@ -4,10 +4,12 @@
     <router-view />
     <Footer />
     <WhatsAppButton />
+    <Analytics />
   </div>
 </template>
 
 <script>
+import { Analytics } from '@vercel/analytics/vue'
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
 import WhatsAppButton from './components/WhatsAppButton.vue'
@@ -15,6 +17,7 @@ import WhatsAppButton from './components/WhatsAppButton.vue'
 export default {
   name: 'App',
   components: {
+    Analytics,
     Navbar,
     Footer,
     WhatsAppButton
